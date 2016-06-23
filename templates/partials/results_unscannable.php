@@ -18,7 +18,8 @@
 *	Primary Author Contact:  Jacob Bates <jacob.bates@ucf.edu>
 */
 ?>
-<h2 class="content-title">Unscannable <small><?= count($items); ?> files</small></h2>
+
+<h2 class="content-title">Unscannable <small><?= $unscannable_count; ?> files</small></h2>
 
 <div class="errorItem panel panel-default">
 	<div class="panel-heading clearfix">
@@ -43,7 +44,9 @@
 
 		<div class="list-group no-margin">
 
-			<?php foreach ($items as $item): ?>
+			<?php error_log('ITEMS: '.print_r($items, true) ); ?>
+
+			<?php foreach ($content_group->items as $item): ?>
 				<a href="<?= $item->url; ?>" class="list-group-item"><?= $item->title; ?></a>
 			<?php endforeach; ?>
 
