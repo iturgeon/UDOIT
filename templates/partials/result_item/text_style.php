@@ -28,7 +28,7 @@
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	<label><input name="add-italic" type="checkbox" value="italic" />&nbsp;Make this text <span style="font-style: italic;">italicized</span></label>
 </div>
-<div class="ufixit-preview">
+<div class="ufixit-preview margin-bottom">
 	<div class="ufixit-preview-canvas" name="load-preview">
 		<p>Text</p>
 	</div>
