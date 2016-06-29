@@ -44,7 +44,7 @@
 
 		<div class="list-group no-margin">
 
-			<?php foreach ($content_group->items as $item): ?>
+			<?php foreach ($items as $item): ?>
 				<a href="<?= $item->url; ?>" class="list-group-item"><?= $item->title; ?></a>
 			<?php endforeach; ?>
 
