@@ -20,7 +20,7 @@
 ?>
 <h1 class="text-center">
 	Report for <?= $this->e($course); ?><br>
-	<small><?= $this->e($error_count); ?> errors, <?= $suggestion_count; ?> suggestions</small>
+	<small><?= $this->e($error_count); ?> errors, <?= $suggestion_count; ?> suggestions, <?= $unscannable_count; ?> unscannables</small>
 </h1>
 
 <p>
@@ -33,6 +33,7 @@
 <div class="errorWrapper">
 	<?php
 		foreach ($report_groups as $group) {
+
 			switch ($group->title) {
 				case "announcements":
 				case "assignments":

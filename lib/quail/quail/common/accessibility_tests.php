@@ -1,9 +1,9 @@
 <?php
 
 // include_once('../config/localConfig.php');
-	
 
-/** 
+
+/**
 *    QUAIL - QUAIL Accessibility Information Library
 *    Copyright (C) 2009 Kevin Miller
 *
@@ -1196,7 +1196,7 @@ class cssTextHasContrast extends quailColorTest
 
 				if (isset($style['font-weight'])) {
 					preg_match_all('!\d+!', $style['font-weight'], $matches);
-					
+
 					if (count($matches) > 0) {
 						if ($matches >= 700) {
 							$bold = true;
@@ -1285,7 +1285,7 @@ class cssTextStyleEmphasize extends quailColorTest
 
 				if (isset($style['font-weight'])) {
 					preg_match_all('!\d+!', $style['font-weight'], $matches);
-					
+
 					if (count($matches) > 0) {
 						if ($matches >= 700) {
 							$bold = true;
@@ -2897,7 +2897,7 @@ class noHeadings extends quailTest
 	function check()
 	{
 		global $doc_length;
-		
+
 		$elements = $this->getAllElements('p');
 
 		$document_string = "";
@@ -3385,7 +3385,7 @@ class imgHasAlt extends quailTest
 	/**
 	*	@var int $default_severity The default severity code for this test.
 	*/
-	var $default_severity = QUAIL_TEST_SUGGESTION;
+	var $default_severity = QUAIL_TEST_SEVERE;
 
 	/**
 	*	The main check function. This is called by the parent class to actually check content
